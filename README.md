@@ -4,13 +4,13 @@
 
 Tired of changing each and every line with CreateDynamicObject() from CreateObject() and running into issues when changing Streamer Plugins or Migrating to or from MTA to SAMP?
 
-✨Then ConvertFFS.com is the perfect place for you! Find your ideal conversion options and get your conversions in less than a second!✨ 
+✨Then (ConvertFFS.com) is the perfect place for you! Find your ideal conversion options and get your conversions in less than a second!✨ 
 
 ✨ Same old ConvertFFS tool and design, helping SAMP/MTA Cartographer since 2009! ✨
   
 `Videos created by our users to demonstrate their use-cases.`
 
-[![Youtube](https://img.shields.io/badge/Youtube-FF4747?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/results?search_query=convertffs&sp=QgIIAQ%253D%253D)&nbsp;
+[![Youtube](https://img.shields.io/badge/Youtube-FF4747?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/results?search_query=convertffs&sp=QgIIAQ%253D%253D)&nbsp; [![Youtube](https://img.shields.io/badge/Live%20Project-blue?style=for-the-badge&logo=Google%20Chrome&logoColor=white)](https://www.convertffs.com/)
 
 ## Tech Stack 
 
