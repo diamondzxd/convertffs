@@ -16,7 +16,7 @@ Tired of changing each and every line with CreateDynamicObject() from CreateObje
 
 
 
-[![php](https://img.shields.io/badge/php-7.1+-blue?style=for-the-badge&logo=php&logoColor=white)](https://www.php.com/)[![JavaScript](https://img.shields.io/badge/JavaScript-release-orange?style=for-the-badge&logo=javascript&logoColor=orange)](https://www.javascript.com/)
+[![php](https://img.shields.io/badge/php-7.1+-blue?style=for-the-badge&logo=php&logoColor=white)](https://www.php.net/)[![JavaScript](https://img.shields.io/badge/JavaScript-release-orange?style=for-the-badge&logo=javascript&logoColor=orange)](https://www.javascript.com/)
 
 
 
