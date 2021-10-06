@@ -2,7 +2,7 @@
 
 # ConvertFFS
 
-Sick of changing each and every line with CreateDynamicObject() from CreateObject() and running into issues when changing Streamer Plugins or Migrating to or from MTA to SAMP?
+Tired of changing each and every line with CreateDynamicObject() from CreateObject() and running into issues when changing Streamer Plugins or Migrating to or from MTA to SAMP?
 
 ✨Then ConvertFFS.com is the perfect place for you! Find your ideal conversion options and get your conversions in less than a second!✨ 
 
@@ -29,4 +29,4 @@ The repository has the following permanent branches:
  * **dev** This contains the latest code. All the contributing PRs must be sent to this branch. When we want to release the next version of the project, this branch is merged into the `master` branch.
 
 ## Contributing
-Please read our [Contributing guidelines]()
+Please read our [Contributing guidelines](https://github.com/diamondzxd/convertffs/blob/main/CONTRIBUTING.md)
