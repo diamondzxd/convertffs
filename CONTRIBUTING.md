@@ -23,4 +23,4 @@ We are happy to welcome all the contributions from anyone willing to improve thi
   - Example of the **PR template**
   <img src="https://user-images.githubusercontent.com/53532851/121510603-6ef30680-ca05-11eb-948e-9012b6630156.png" width="700">
 
-- **For any queries or discussions, please drop a message at diamondzxd#5385
+- **For any queries or discussions, please drop a message at diamondzxd#5385**
