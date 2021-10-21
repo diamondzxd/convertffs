@@ -371,16 +371,12 @@
 	*
 	-->
 	<div id="wrapper">
-		<div id="dropDownContainer">
+		<div id="dropDownContainer" style="bottom:100vh">
 			<div id="dropDown">
 				<div id="dropDownLeft">
 					<strong class="medText">About convertFFS</strong><br />
 					convertFFS is arguably the best object and vehicle converter out there for the GTA: San Andreas modifications SA-MP and MTA. (<a href="#about" id="aboutLink">Read more</a>)<br /><br />
 					<a href="#changeLog" id="showChangeLog">Click here for our changelog</a>
-				</div>
-				<div id="dropDownRight">
-					<strong class="medText">Contact convertFFS</strong><br />
-					Found a bug? Have an idea? <a href="http://forum.sa-mp.com/member.php?u=98695"><br>PM Haydz on the SA-MP forums!</a><br /><br />
 				</div>
 				<div id="dropDownCenter">
 					<strong class="medText">convertFFS statistics</strong><br />
@@ -388,6 +384,10 @@
 					<strong id="conversionsWeek">(Loading)</strong> conversions this week<br />
 					<strong id="conversionsTotal">(Loading)</strong> conversions since November 2014<br />
 					Average of <strong id="conversionsAverage">(Loading)</strong> conversions a minute!
+				</div>
+				<div id="dropDownRight">
+					<strong class="medText">Contact convertFFS</strong><br />
+					Found a bug? Have an idea? <a href="http://forum.sa-mp.com/member.php?u=98695"><br>PM Haydz on the SA-MP forums!</a><br /><br />
 				</div>
 				<div id="dropDownClose">
 					<div class="sprite close dropDownActivate"></div>
@@ -399,39 +399,42 @@
 			</div>
 		<div id="pageContainer">
 			<div id="uploadLink">I want to upload instead of pasting!</div>
-			<div id="inputArea">
-				<div class="resizable">
-					<textarea id="inputAreaElement" class="inputAreaElementBg" wrap="off"></textarea>
+				<div id="inputArea">
+					<div class="resizable">
+						<textarea id="inputAreaElement" class="inputAreaElementBg" wrap="off"></textarea>
+					</div>
 				</div>
-			</div>
-			<div id="inputBlock" class="spriteBg">
-				<div id="inputSprite" class="sprite"></div>
-				<a href="#inputObjectFormatChange" id="inputObjectFormat"><span id="inputObjectFormatText">MTA 1.0 Object</span> <p>change</p></a><br />
-				<a href="#inputVehicleFormatChange" id="inputVehicleFormat"><span id="inputVehicleFormatText">MTA 1.0 Vehicle</span> <p>change</p></a>
-			</div>
-			<div id="optionsBlock" class="spriteBg">
-				<div id="optionsSprite" class="sprite"></div>
-				<div id="optionsBlockLeft">
-					<a href="#changeDrawDistance" id="optionsDrawDistance">Draw-distance <p>250</p></a><br />
-					<a href="#" onClick="return false" id="optionsComments">Add comments <p>Yes</p></a><br />
-					<a href="#changeVehicleArray" id="optionsVehicleArray">Vehicles array <p>No</p></a><br />
-					<a href="#changeVehicleColour1" id="vehicleColour1">Vehicle colour one <p>No change</p></a>
-				</div>
-				<div id="optionsBlockRight">
-					<a href="#changeRespawnTime" id="optionsRespawnTime">Vehicle respawn time <p>15</p></a><br />
-					<a href="#" onClick="return false" id="optionsScript">Add to SA-MP script <p>No</p></a><br />
-					<a href="#changeObjectArray" id="optionsObjectArray">Objects array <p>No</p></a><br />
-					<a href="#changeVehicleColour2" id="vehicleColour2">Vehicle colour two <p>No change</p></a>
-				</div>
-				<div style="text-align: center; margin-top: 70px; color: #FFF;"><a id="total_conversions"></a></div>
-			</div>
-			<div id="outputBlock" class="spriteBg">
-				<div id="outputSprite" class="sprite"></div>
-				<a href="#outputObjectFormatChange" id="outputObjectFormat"><span id="outputObjectFormatText">SA-MP CreateObject</span> <p>change</p></a><br />
-				<a href="#outputVehicleFormatChange" id="outputVehicleFormat"><span id="outputVehicleFormatText">SA-MP AddStaticVehicleEx</span> <p>change</p></a>
-			</div>
-			<div id="convertButton" class="spriteBg">
-				<div id="convertButtonSprite" class="sprite"></div>
+				<div class="responsiveGrid">
+					<div id="inputBlock" class="spriteBg">
+						<div id="inputSprite" class="sprite"></div>
+						<a href="#inputObjectFormatChange" id="inputObjectFormat"><span id="inputObjectFormatText">MTA 1.0 Object</span> <p>change</p></a><br />
+						<a href="#inputVehicleFormatChange" id="inputVehicleFormat"><span id="inputVehicleFormatText">MTA 1.0 Vehicle</span> <p>change</p></a>
+					</div>
+					<div id="optionsBlock" class="spriteBg">
+						<div id="optionsSprite" class="sprite"></div>
+						<div id="optionsBlockLeft">
+							<a href="#changeDrawDistance" id="optionsDrawDistance">Draw-distance <p>250</p></a><br />
+							<a href="#" onClick="return false" id="optionsComments">Add comments <p>Yes</p></a><br />
+							<a href="#changeVehicleArray" id="optionsVehicleArray">Vehicles array <p>No</p></a><br />
+							<a href="#changeVehicleColour1" id="vehicleColour1">Vehicle colour one <p>No change</p></a>
+						</div>
+						<div id="optionsBlockRight">
+							<a href="#changeRespawnTime" id="optionsRespawnTime">Vehicle respawn time <p>15</p></a><br />
+							<a href="#" onClick="return false" id="optionsScript">Add to SA-MP script <p>No</p></a><br />
+							<a href="#changeObjectArray" id="optionsObjectArray">Objects array <p>No</p></a><br />
+							<a href="#changeVehicleColour2" id="vehicleColour2">Vehicle colour two <p>No change</p></a>
+						</div>
+						<div style="text-align: center; margin-top: 70px; color: #FFF;"><a id="total_conversions"></a></div>
+					</div>
+					<div id="outputBlock" class="spriteBg">
+						<div id="outputSprite" class="sprite"></div>
+						<a href="#outputObjectFormatChange" id="outputObjectFormat"><span id="outputObjectFormatText">SA-MP CreateObject</span> <p>change</p></a><br />
+						<a href="#outputVehicleFormatChange" id="outputVehicleFormat"><span id="outputVehicleFormatText">SA-MP AddStaticVehicleEx</span> <p>change</p></a>
+					</div>
+					<div id="convertButton" class="spriteBg convertSprite">
+						<div id="convertButtonSprite" class="sprite"></div>
+					</div>	
+				</div>						
 			</div>
 		</div>
 		<div id="pageContainerConverted">

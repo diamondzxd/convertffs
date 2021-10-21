@@ -13,16 +13,19 @@ body {
 }
 #dropDownContainer{
 	text-align:center;
-	z-index:2000;
+	z-index:20000;
 	width:100%;
 	position:absolute;
-	top:-160px
+	height: max-content;
+
 }
 #dropDown{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:center;
 	margin:auto;
-	height:165px;
 	background:#081e30;
-	width:981px;
+	width:100vw;
 	-moz-border-radius:0px 0px 5px 5px;
 	-khtml-border-bottom-left-radius:5px;
 	-khtml-border-bottom-right-radius:5px;
@@ -33,14 +36,16 @@ body {
 	color:#d7f2fe
 }
 #dropDownClose{
-	margin:4px;
+	margin:4px auto;
 	padding:7px 0px 6px 0px;
+	min-width: 100%;
 }
 #pageHeader{
-	width:981px;
+	width:92vw;
 	height:40px;
 	padding-top:15px;
-	margin:auto
+	margin:auto;
+	top: 0px;
 }
 .dropDownActivate{
 	cursor:pointer	
@@ -53,9 +58,10 @@ body {
 	background:url(../images/sprite.png) #1d5c7f;
 	border:0
 }
-#pageContainer,#pageContainerConverted{
-	width:981px;
-	margin:auto
+
+#pageContainer, #pageContainerConverted{
+	width: 92vw;
+	margin: 4vw;
 }
 #wrapper{
 	min-height:100%;
@@ -96,46 +102,56 @@ body {
 .inputAreaElementUpload,.outputAreaElementWait{
 	background:url(../images/loading.gif) no-repeat center
 }
-#dropDownLeft{
-	float:left;
-	margin:0em
-}
-#dropDownCenter{
-	margin:0em 1em
-}
-#dropDownRight{
-	float:right
-}
+
 #dropDownLeft,#dropDownCenter,#dropDownRight{
 	text-align:center;
-	height:123px;
-	width:33%;
-	overflow:hidden
+	overflow:hidden;
+	padding: 1em 2em;
+	width: 33%;
+	min-width: 300px;
+	flex-shrink: 1;
+	flex-grow: 1;
+	box-sizing: border-box;
+	border-bottom: 1px solid #0d2c45;
 }
+
+.responsiveGrid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 2fr;
+	grid-template-rows: auto;
+	column-gap: 10px;
+	row-gap: 10px;
+	margin: 10px 0px;
+}
+
 #inputBlock{
-	width:265px;
-	height:66px;
-	margin-right:5px;
-	float:left
+	grid-area: 1 / 1 / span 1 / span 1;
+	height: calc(max(max-content,100%));
 }
 #outputBlock{
-	width:265px;
-	height:66px;
-	margin:0em 1em
+	grid-area: 1 / 2 / span 1 / span 1;
+	height: calc(max(max-content,100%));
 }
 #optionsBlock{
-	width:441px;
-	height:125px;
-	float:right
+	grid-area: 1 / 3 / span 2 / span 1;
+	height: 100%;
 }
-#convertButton{
-	width:535px;
-	float:left;	
+#convertButton {
+	grid-area: 2 / 1 / span 1 / span 2;
+	height: 100%;
 	cursor:pointer;
     position: relative;
     z-index: 19000;
+	display: flex;
 }
+
+.convertSprite {
+	display: flex;
+	align-items: center;
+}
+
 #convertMoreButton{
+	margin: 10px 0px;
 	width:100%;
 	float:left;	
 	cursor:pointer
@@ -145,8 +161,7 @@ body {
 	color:#d7f2fe;
 	text-align:center;
 	overflow:hidden;
-	padding:5px 0em 5px 0em;
-	margin-top:5px;
+	padding: 10px 0em 5px 0em;
 	background-position:0px -322px;
 	background-repeat:repeat-x;
 	-moz-border-radius:5px;
@@ -161,6 +176,7 @@ body {
 #convertMoreButton:hover{
 	background-position:0px -336px
 }
+
 #optionsBlockLeft{
 	float:left;
 	width:50%
@@ -192,7 +208,6 @@ body {
 	height:41px;
 	width:118px;
 	margin:auto;
-	margin-top:3px;
 	background-position:0px -138px
 }
 #convertMoreButtonSprite{
@@ -438,7 +453,9 @@ img {
 	font-size:x-large
 }
 #pageContainerConverted{
-	display:none
+	display:none;
+	position: absolute;
+	top: 4vh;
 }
 #qualityControlWarning{
 	background:#FF9;
@@ -472,4 +489,52 @@ img {
 	position:absolute;
 	top:5px;
 	left:5px
+}
+
+
+
+
+@media only screen and (max-width: 900px) {
+
+
+	.responsive-grid {
+		grid-template-columns: 1fr 1fr;
+	}
+	
+	#inputBlock{
+		grid-area: 1 / 1 / span 1 / span 1;
+	}
+	#outputBlock{
+		grid-area: 1 / 2 / span 1 / span 1;
+	}
+	#optionsBlock{
+		grid-area: 2 / 1 / span 1 / span 2;
+		height: auto;
+	}
+	#convertButton {
+		grid-area: 3 / 1 / span 1 / span 2;
+	}
+	
+}
+
+@media only screen and (max-width: 520px) {
+
+	.responsive-grid {
+		grid-template-columns: 1fr;
+	}
+	
+	#inputBlock{
+		grid-area: 1 / 1 / span 1 / span 1;
+	}
+	#outputBlock{
+		grid-area: 2 / 1 / span 1 / span 1;
+	}
+	#optionsBlock{
+		grid-area: 3 / 1 / span 1 / span 1;
+		height: auto;
+	}
+	#convertButton {
+		grid-area: 4 / 1 / span 1 / span 1;
+	}
+	
 }
