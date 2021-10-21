@@ -346,10 +346,21 @@
 				alert('This feature is not available in your deprecated browser. Please upgrade!');
 				return;
 			}
-			if($('#dropDownContainer').css('top') == '-160px')
-				$('#dropDownContainer').animate({'top' : '0px'}, 500);
-			else
-				$('#dropDownContainer').animate({'top' : '-160px'}, 500);
+			
+			let dropdown = document.getElementById('dropDownContainer');
+			let height = window.getComputedStyle(dropdown).height;
+			let windowHeight = window.innerHeight;
+
+			if(parseInt($('#dropDownContainer').css('top')) < 0) {
+				dropdown.style.bottom = windowHeight - height + 'px';
+				dropdown.style.top = '0px';
+				dropdown.style.removeProperty('bottom');
+			}
+			else {
+				dropdown.style.bottom = windowHeight - height + 'px';
+				dropdown.style.removeProperty('top');
+				dropdown.style.bottom = "100vh";
+			}
 			return;
 		});
 
