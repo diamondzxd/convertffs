@@ -61,7 +61,8 @@ body {
 
 #pageContainer, #pageContainerConverted{
 	width: 92vw;
-	margin: 4vw;
+	margin: auto;
+	max-width: 981px;
 }
 #wrapper{
 	min-height:100%;
@@ -497,7 +498,7 @@ img {
 @media only screen and (max-width: 900px) {
 
 
-	.responsive-grid {
+	.responsiveGrid {
 		grid-template-columns: 1fr 1fr;
 	}
 	
@@ -519,7 +520,7 @@ img {
 
 @media only screen and (max-width: 520px) {
 
-	.responsive-grid {
+	.responsiveGrid {
 		grid-template-columns: 1fr;
 	}
 	
