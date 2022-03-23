@@ -6,7 +6,7 @@ Tired of changing each and every line with CreateDynamicObject() from CreateObje
 
 ✨Then [ConvertFFS.com](https://www.convertffs.com/) is the perfect place for you! Find your ideal conversion options and get your conversions in less than a second!✨ 
 
-✨ Same old ConvertFFS tool and design, helping SAMP/MTA Cartographer since 2009! ✨
+✨ Same old ConvertFFS tool and design, helping SAMP/MTA Cartographers since 2009! ✨
   
 `Videos created by our users to demonstrate their use-cases.`
 
