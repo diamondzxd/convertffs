@@ -1,4 +1,4 @@
-![ConvertFFS](https://cloud.piyush.ovh/index.php/s/GQKmKRqt2zDY5AB/preview)
+![ConvertFFS](https://raw.githubusercontent.com/diamondzxd/convertffs/main/docs/front-page.png)
 
 # ConvertFFS
 
